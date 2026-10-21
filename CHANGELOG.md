@@ -1,5 +1,12 @@
 # 更新记录
 
+## 3.1 — 2026-10-21
+
+- 版本号升至 3.1，产物名统一为 `PclModpackEnabler.exe`
+- 界面重做：三步式布局、状态提示、处理日志、进度条
+- 新增 `tools/ExtractPayload`：可从源码构建复现载荷
+- 新增 `docs/PROVENANCE.md`、`docs/VERIFICATION.md`、`docs/SOURCE-MAP.md`、`SECURITY.md`
+- CI 工作流修正（此前误放在 `github/workflows/`）
 ## 3.0 — 2026-10-21
 
 - 统一 GUI 与命令行到同一个 `PatcherCore.Process()` 入口

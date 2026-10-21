@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup>
+  <OutputType>Exe</OutputType><TargetFramework>net48</TargetFramework><LangVersion>latest</LangVersion>
+  <AssemblyName>PclFix.Tests</AssemblyName><Deterministic>true</Deterministic><DebugType>none</DebugType>
+  <PathMap>$(MSBuildProjectDirectory)=/tests</PathMap>
+ </PropertyGroup>
+ <ItemGroup><ProjectReference Include="../PclModpackEnabler.csproj"/></ItemGroup>
+</Project>

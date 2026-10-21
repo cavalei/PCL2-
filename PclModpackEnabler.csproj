@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup>
+  <OutputType>WinExe</OutputType><TargetFramework>net48</TargetFramework>
+  <LangVersion>latest</LangVersion><Nullable>disable</Nullable><EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  <AssemblyName>PclModpackEnabler</AssemblyName><RootNamespace>PclFusion</RootNamespace>
+  <Deterministic>true</Deterministic><DebugType>none</DebugType><GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  <PathMap>$(MSBuildProjectDirectory)=/src</PathMap><AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+ </PropertyGroup>
+ <ItemGroup>
+  <Compile Include="src/**/*.cs"/>
+  <Reference Include="System.Windows.Forms"/><Reference Include="System.Drawing"/>
+  <PackageReference Include="dnlib" Version="4.5.0"/>
+  <PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
+  <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net48" Version="1.0.3" PrivateAssets="all"/>
+  <EmbeddedResource Include="Resources/*.json" LogicalName="PclFusion.%(Filename)%(Extension)"/>
+ </ItemGroup>
+
+ <ItemGroup>
+  <EmbeddedResource Include="$(NuGetPackageRoot)/dnlib/4.5.0/lib/net45/dnlib.dll" LogicalName="PclFusion.Embedded.dnlib.dll"/>
+  <EmbeddedResource Include="$(NuGetPackageRoot)/newtonsoft.json/13.0.3/lib/net45/Newtonsoft.Json.dll" LogicalName="PclFusion.Embedded.Newtonsoft.Json.dll"/>
+ </ItemGroup>
+</Project>
+
+

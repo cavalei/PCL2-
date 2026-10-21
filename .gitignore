@@ -1,18 +1,16 @@
-# 构建产物
+bin/
+obj/
 dist/
 *.exe
+*.dll
 *.pdb
-
-# 不提交任何 PCL 启动器本体或其副本
-Plain Craft Launcher*.exe
-PCL2*.exe
-
-# 系统文件
+*.zip
+*.log
+*.user
+.env
+.env.*
 Thumbs.db
 desktop.ini
 .DS_Store
-
-# 编辑器
 .vscode/
 .idea/
-*.swp

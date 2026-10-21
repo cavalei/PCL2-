@@ -1,0 +1,3775 @@
+{
+  "Schema": 1,
+  "Methods": [
+    {
+      "Method": "System.Void PCL.PageDownloadInstall::LoaderInit()",
+      "MaxStack": 9,
+      "InitLocals": true,
+      "CanonicalSha256": "20F0BAB8C386F72D18705E88A17DDBEAD905EEEDDBFDF150B3B32C4C23D04802",
+      "Locals": [],
+      "Instructions": [
+        {
+          "Opcode": "ldarg.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Void PCL.PageDownloadInstall::ControlInit()",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "PCL.MyLoading PCL.PageDownloadInstall::get_LoadMinecraft()",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "PCL.MyCard PCL.PageDownloadInstall::get_PanLoad()",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Windows.Controls.Grid PCL.PageDownloadInstall::get_PanAllBack()",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldnull",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldsfld",
+          "Kind": "field",
+          "Value": "PCL.ModLoader/LoaderTask\u00602\u003CSystem.String,PCL.ModDownload/DlClientListResult\u003E PCL.ModDownload::DlClientListLoader",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldftn",
+          "Kind": "method",
+          "Value": "System.Void PCL.PageDownloadInstall::_Lambda$__R3-5(PCL.ModLoader/LoaderTask\u00602\u003CSystem.String,PCL.ModDownload/DlClientListResult\u003E)",
+          "Indices": null
+        },
+        {
+          "Opcode": "newobj",
+          "Kind": "method",
+          "Value": "System.Void System.Action\u00601\u003CPCL.ModLoader/LoaderTask\u00602\u003CSystem.String,PCL.ModDownload/DlClientListResult\u003E\u003E::.ctor(System.Object,System.IntPtr)",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldnull",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Void PCL.MyPageRight::PageLoaderInit\u003CSystem.String,PCL.ModDownload/DlClientListResult\u003E(PCL.MyLoading,System.Windows.FrameworkElement,System.Windows.FrameworkElement,System.Windows.FrameworkElement,PCL.ModLoader/LoaderTask\u00602\u003CSystem.String,PCL.ModDownload/DlClientListResult\u003E,System.Action\u00601\u003CPCL.ModLoader/LoaderTask\u00602\u003CSystem.String,PCL.ModDownload/DlClientListResult\u003E\u003E,System.Func\u00601\u003CSystem.String\u003E,System.Boolean)",
+          "Indices": null
+        },
+        {
+          "Opcode": "ret",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        }
+      ],
+      "Handlers": []
+    },
+    {
+      "Method": "System.Void PCL.ModModpack::ModpackInstall()",
+      "MaxStack": 11,
+      "InitLocals": true,
+      "CanonicalSha256": "EB96E076F171D5616028BDBFF24ED7248217232754237631C274CF4DEDDE8C7A",
+      "Locals": [
+        "PCL.ModModpack/_Closure$__0-0"
+      ],
+      "Instructions": [
+        {
+          "Opcode": "newobj",
+          "Kind": "method",
+          "Value": "System.Void PCL.ModModpack/_Closure$__0-0::.ctor()",
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "\u9009\u62E9\u6574\u5408\u5305\u538B\u7F29\u6587\u4EF6",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldnull",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "newarr",
+          "Kind": "type",
+          "Value": "System.ValueTuple\u00602\u003CSystem.String[],System.String\u003E",
+          "Indices": null
+        },
+        {
+          "Opcode": "dup",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.3",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "newarr",
+          "Kind": "type",
+          "Value": "System.String",
+          "Indices": null
+        },
+        {
+          "Opcode": "dup",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "rar",
+          "Indices": null
+        },
+        {
+          "Opcode": "stelem.ref",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "dup",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "zip",
+          "Indices": null
+        },
+        {
+          "Opcode": "stelem.ref",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "dup",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.2",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "mrpack",
+          "Indices": null
+        },
+        {
+          "Opcode": "stelem.ref",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "\u6574\u5408\u5305\u6587\u4EF6",
+          "Indices": null
+        },
+        {
+          "Opcode": "newobj",
+          "Kind": "method",
+          "Value": "System.Void System.ValueTuple\u00602\u003CSystem.String[],System.String\u003E::.ctor(System.String[],System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "stelem",
+          "Kind": "type",
+          "Value": "System.ValueTuple\u00602\u003CSystem.String[],System.String\u003E",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "MeloongCore.OneOf\u00602\u003CSystem.Collections.Generic.IEnumerable\u00601\u003CSystem.ValueTuple\u00602\u003CSystem.String[],System.String\u003E\u003E,System.String\u003E MeloongCore.OneOf\u00602\u003CSystem.Collections.Generic.IEnumerable\u00601\u003CSystem.ValueTuple\u00602\u003CSystem.String[],System.String\u003E\u003E,System.String\u003E::op_Implicit(System.Collections.Generic.IEnumerable\u00601\u003CSystem.ValueTuple\u00602\u003CSystem.String[],System.String\u003E\u003E)",
+          "Indices": null
+        },
+        {
+          "Opcode": "newobj",
+          "Kind": "method",
+          "Value": "System.Void System.Nullable\u00601\u003CMeloongCore.OneOf\u00602\u003CSystem.Collections.Generic.IEnumerable\u00601\u003CSystem.ValueTuple\u00602\u003CSystem.String[],System.String\u003E\u003E,System.String\u003E\u003E::.ctor(MeloongCore.OneOf\u00602\u003CSystem.Collections.Generic.IEnumerable\u00601\u003CSystem.ValueTuple\u00602\u003CSystem.String[],System.String\u003E\u003E,System.String\u003E)",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Collections.Generic.List\u00601\u003CSystem.String\u003E MeloongCore.Wpf.Dialogs::SelectFile(System.String,System.Boolean,System.String,System.Nullable\u00601\u003CMeloongCore.OneOf\u00602\u003CSystem.Collections.Generic.IEnumerable\u00601\u003CSystem.ValueTuple\u00602\u003CSystem.String[],System.String\u003E\u003E,System.String\u003E\u003E)",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.String System.Linq.Enumerable::FirstOrDefault\u003CSystem.String\u003E(System.Collections.Generic.IEnumerable\u00601\u003CSystem.String\u003E)",
+          "Indices": null
+        },
+        {
+          "Opcode": "stfld",
+          "Kind": "field",
+          "Value": "System.String PCL.ModModpack/_Closure$__0-0::$VB$Local_File",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldfld",
+          "Kind": "field",
+          "Value": "System.String PCL.ModModpack/_Closure$__0-0::$VB$Local_File",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Boolean System.String::IsNullOrEmpty(System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "brtrue.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            40
+          ]
+        },
+        {
+          "Opcode": "ldloc.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldftn",
+          "Kind": "method",
+          "Value": "System.Void PCL.ModModpack/_Closure$__0-0::_Lambda$__0()",
+          "Indices": null
+        },
+        {
+          "Opcode": "newobj",
+          "Kind": "method",
+          "Value": "System.Void System.Action::.ctor(System.Object,System.IntPtr)",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Void PCL.ModBase::RunInThread(System.Action)",
+          "Indices": null
+        },
+        {
+          "Opcode": "ret",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        }
+      ],
+      "Handlers": []
+    },
+    {
+      "Method": "PCL.ModLoader/LoaderCombo\u00601\u003CSystem.String\u003E PCL.ModModpack::ModpackInstall(System.String,System.String,System.String)",
+      "MaxStack": 5,
+      "InitLocals": true,
+      "CanonicalSha256": "87845830148ACDF63D8CDD3DD3118CEE72289BE5B55AE4DFEA0533BF02465853",
+      "Locals": [
+        "PCL.ModLoader/LoaderCombo\u00601\u003CSystem.String\u003E",
+        "System.IO.Compression.ZipArchive",
+        "System.String",
+        "System.String",
+        "System.Int32",
+        "System.Threading.CancellationToken",
+        "System.Collections.Generic.IEnumerator\u00601\u003CSystem.IO.Compression.ZipArchiveEntry\u003E",
+        "System.IO.Compression.ZipArchiveEntry",
+        "System.String[]",
+        "System.Exception"
+      ],
+      "Instructions": [
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "\u6574\u5408\u5305\u5B89\u88C5\u8BF7\u6C42\uFF1A{0}",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "dup",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "brtrue.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            6
+          ]
+        },
+        {
+          "Opcode": "pop",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "null",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.String System.String::Format(System.String,System.Object)",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "ModModpack.vb",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Void MeloongCore.Logger::Info(System.String,MeloongCore.LogBehavior,System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldnull",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "",
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.2",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "{0}versions\\{1}\\",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.String PCL.ModMinecraft::get_McFolderSelected()",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.String System.String::Format(System.String,System.Object,System.Object)",
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.3",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.3",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "!",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Boolean System.String::Contains(System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "brtrue.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            27
+          ]
+        },
+        {
+          "Opcode": "ldloc.3",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": ";",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Boolean System.String::Contains(System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "brfalse.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            35
+          ]
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "\u6E38\u620F\u8DEF\u5F84\u4E2D\u4E0D\u80FD\u542B\u6709\u611F\u53F9\u53F7\u6216\u5206\u53F7\uFF1A",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.3",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.String System.String::Concat(System.String,System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.2",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Void PCL.ModMain::Hint(System.String,PCL.ModMain/HintType,System.Boolean)",
+          "Indices": null
+        },
+        {
+          "Opcode": "newobj",
+          "Kind": "method",
+          "Value": "System.Void System.OperationCanceledException::.ctor()",
+          "Indices": null
+        },
+        {
+          "Opcode": "throw",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.m1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.s",
+          "Kind": "local",
+          "Value": "4",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloca.s",
+          "Kind": "local",
+          "Value": "5",
+          "Indices": null
+        },
+        {
+          "Opcode": "initobj",
+          "Kind": "type",
+          "Value": "System.Threading.CancellationToken",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.s",
+          "Kind": "local",
+          "Value": "5",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.IO.Compression.ZipArchive MeloongCore.FileUtils::OpenZip(System.String,System.Threading.CancellationToken)",
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "mcbbs.packmeta",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.IO.Compression.ZipArchiveEntry System.IO.Compression.ZipArchive::GetEntry(System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "brfalse.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            50
+          ]
+        },
+        {
+          "Opcode": "ldc.i4.3",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.s",
+          "Kind": "local",
+          "Value": "4",
+          "Indices": null
+        },
+        {
+          "Opcode": "leave",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            246
+          ]
+        },
+        {
+          "Opcode": "ldloc.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "mmc-pack.json",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.IO.Compression.ZipArchiveEntry System.IO.Compression.ZipArchive::GetEntry(System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "brfalse.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            57
+          ]
+        },
+        {
+          "Opcode": "ldc.i4.2",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.s",
+          "Kind": "local",
+          "Value": "4",
+          "Indices": null
+        },
+        {
+          "Opcode": "leave",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            246
+          ]
+        },
+        {
+          "Opcode": "ldloc.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "modrinth.index.json",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.IO.Compression.ZipArchiveEntry System.IO.Compression.ZipArchive::GetEntry(System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "brfalse.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            64
+          ]
+        },
+        {
+          "Opcode": "ldc.i4.4",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.s",
+          "Kind": "local",
+          "Value": "4",
+          "Indices": null
+        },
+        {
+          "Opcode": "leave",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            246
+          ]
+        },
+        {
+          "Opcode": "ldloc.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "manifest.json",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.IO.Compression.ZipArchiveEntry System.IO.Compression.ZipArchive::GetEntry(System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "brfalse.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            85
+          ]
+        },
+        {
+          "Opcode": "ldloc.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "manifest.json",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.IO.Compression.ZipArchiveEntry System.IO.Compression.ZipArchive::GetEntry(System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.IO.Stream System.IO.Compression.ZipArchiveEntry::Open()",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Text.Encoding System.Text.Encoding::get_UTF8()",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.String MeloongCore.Extensions.StringExtensions::ReadString(System.IO.Stream,System.Text.Encoding)",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "Newtonsoft.Json.Linq.JToken MeloongCore.Extensions.StringExtensions::DeserializeJson(System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "castclass",
+          "Kind": "type",
+          "Value": "Newtonsoft.Json.Linq.JObject",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "addons",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "Newtonsoft.Json.Linq.JToken Newtonsoft.Json.Linq.JObject::get_Item(System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "brtrue.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            82
+          ]
+        },
+        {
+          "Opcode": "ldc.i4.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.s",
+          "Kind": "local",
+          "Value": "4",
+          "Indices": null
+        },
+        {
+          "Opcode": "leave",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            246
+          ]
+        },
+        {
+          "Opcode": "ldc.i4.3",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.s",
+          "Kind": "local",
+          "Value": "4",
+          "Indices": null
+        },
+        {
+          "Opcode": "leave",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            246
+          ]
+        },
+        {
+          "Opcode": "ldloc.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "modpack.json",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.IO.Compression.ZipArchiveEntry System.IO.Compression.ZipArchive::GetEntry(System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "brfalse.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            92
+          ]
+        },
+        {
+          "Opcode": "ldc.i4.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.s",
+          "Kind": "local",
+          "Value": "4",
+          "Indices": null
+        },
+        {
+          "Opcode": "leave",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            246
+          ]
+        },
+        {
+          "Opcode": "ldloc.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "modpack.zip",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.IO.Compression.ZipArchiveEntry System.IO.Compression.ZipArchive::GetEntry(System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "brtrue.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            100
+          ]
+        },
+        {
+          "Opcode": "ldloc.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "modpack.mrpack",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.IO.Compression.ZipArchiveEntry System.IO.Compression.ZipArchive::GetEntry(System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "brfalse.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            103
+          ]
+        },
+        {
+          "Opcode": "ldc.i4.s",
+          "Kind": "SByte",
+          "Value": "9",
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.s",
+          "Kind": "local",
+          "Value": "4",
+          "Indices": null
+        },
+        {
+          "Opcode": "leave",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            246
+          ]
+        },
+        {
+          "Opcode": "nop",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Collections.ObjectModel.ReadOnlyCollection\u00601\u003CSystem.IO.Compression.ZipArchiveEntry\u003E System.IO.Compression.ZipArchive::get_Entries()",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Collections.Generic.IEnumerator\u00601\u003CSystem.IO.Compression.ZipArchiveEntry\u003E System.Collections.ObjectModel.ReadOnlyCollection\u00601\u003CSystem.IO.Compression.ZipArchiveEntry\u003E::GetEnumerator()",
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.s",
+          "Kind": "local",
+          "Value": "6",
+          "Indices": null
+        },
+        {
+          "Opcode": "br",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            209
+          ]
+        },
+        {
+          "Opcode": "ldloc.s",
+          "Kind": "local",
+          "Value": "6",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.IO.Compression.ZipArchiveEntry System.Collections.Generic.IEnumerator\u00601\u003CSystem.IO.Compression.ZipArchiveEntry\u003E::get_Current()",
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.s",
+          "Kind": "local",
+          "Value": "7",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.s",
+          "Kind": "local",
+          "Value": "7",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.String System.IO.Compression.ZipArchiveEntry::get_FullName()",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "/",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.String[] MeloongCore.Extensions.StringExtensions::Split(System.String,System.String,System.Boolean)",
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.s",
+          "Kind": "local",
+          "Value": "8",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.s",
+          "Kind": "local",
+          "Value": "8",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldelem.ref",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "/",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.String System.String::Concat(System.String,System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.2",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.s",
+          "Kind": "local",
+          "Value": "8",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Int32 System.Linq.Enumerable::Count\u003CSystem.String\u003E(System.Collections.Generic.IEnumerable\u00601\u003CSystem.String\u003E)",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.2",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "bne.un",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            209
+          ]
+        },
+        {
+          "Opcode": "ldloc.s",
+          "Kind": "local",
+          "Value": "8",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldelem.ref",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "mcbbs.packmeta",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Int32 Microsoft.VisualBasic.CompilerServices.Operators::CompareString(System.String,System.String,System.Boolean)",
+          "Indices": null
+        },
+        {
+          "Opcode": "brtrue.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            138
+          ]
+        },
+        {
+          "Opcode": "ldc.i4.3",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.s",
+          "Kind": "local",
+          "Value": "4",
+          "Indices": null
+        },
+        {
+          "Opcode": "leave",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            246
+          ]
+        },
+        {
+          "Opcode": "ldloc.s",
+          "Kind": "local",
+          "Value": "8",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldelem.ref",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "mmc-pack.json",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Int32 Microsoft.VisualBasic.CompilerServices.Operators::CompareString(System.String,System.String,System.Boolean)",
+          "Indices": null
+        },
+        {
+          "Opcode": "brtrue.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            148
+          ]
+        },
+        {
+          "Opcode": "ldc.i4.2",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.s",
+          "Kind": "local",
+          "Value": "4",
+          "Indices": null
+        },
+        {
+          "Opcode": "leave",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            246
+          ]
+        },
+        {
+          "Opcode": "ldloc.s",
+          "Kind": "local",
+          "Value": "8",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldelem.ref",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "modrinth.index.json",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Int32 Microsoft.VisualBasic.CompilerServices.Operators::CompareString(System.String,System.String,System.Boolean)",
+          "Indices": null
+        },
+        {
+          "Opcode": "brtrue.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            158
+          ]
+        },
+        {
+          "Opcode": "ldc.i4.4",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.s",
+          "Kind": "local",
+          "Value": "4",
+          "Indices": null
+        },
+        {
+          "Opcode": "leave",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            246
+          ]
+        },
+        {
+          "Opcode": "ldloc.s",
+          "Kind": "local",
+          "Value": "8",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldelem.ref",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "manifest.json",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Int32 Microsoft.VisualBasic.CompilerServices.Operators::CompareString(System.String,System.String,System.Boolean)",
+          "Indices": null
+        },
+        {
+          "Opcode": "brtrue.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            182
+          ]
+        },
+        {
+          "Opcode": "ldloc.s",
+          "Kind": "local",
+          "Value": "7",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.IO.Stream System.IO.Compression.ZipArchiveEntry::Open()",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Text.Encoding System.Text.Encoding::get_UTF8()",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.String MeloongCore.Extensions.StringExtensions::ReadString(System.IO.Stream,System.Text.Encoding)",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "Newtonsoft.Json.Linq.JToken MeloongCore.Extensions.StringExtensions::DeserializeJson(System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "castclass",
+          "Kind": "type",
+          "Value": "Newtonsoft.Json.Linq.JObject",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "addons",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "Newtonsoft.Json.Linq.JToken Newtonsoft.Json.Linq.JObject::get_Item(System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "brtrue.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            177
+          ]
+        },
+        {
+          "Opcode": "ldc.i4.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.s",
+          "Kind": "local",
+          "Value": "4",
+          "Indices": null
+        },
+        {
+          "Opcode": "leave",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            246
+          ]
+        },
+        {
+          "Opcode": "ldc.i4.3",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.s",
+          "Kind": "local",
+          "Value": "4",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "overrides/",
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.2",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "leave",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            246
+          ]
+        },
+        {
+          "Opcode": "ldloc.s",
+          "Kind": "local",
+          "Value": "8",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldelem.ref",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "modpack.json",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Int32 Microsoft.VisualBasic.CompilerServices.Operators::CompareString(System.String,System.String,System.Boolean)",
+          "Indices": null
+        },
+        {
+          "Opcode": "brtrue.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            192
+          ]
+        },
+        {
+          "Opcode": "ldc.i4.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.s",
+          "Kind": "local",
+          "Value": "4",
+          "Indices": null
+        },
+        {
+          "Opcode": "leave",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            246
+          ]
+        },
+        {
+          "Opcode": "ldloc.s",
+          "Kind": "local",
+          "Value": "8",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldelem.ref",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "modpack.zip",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Int32 Microsoft.VisualBasic.CompilerServices.Operators::CompareString(System.String,System.String,System.Boolean)",
+          "Indices": null
+        },
+        {
+          "Opcode": "brfalse.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            206
+          ]
+        },
+        {
+          "Opcode": "ldloc.s",
+          "Kind": "local",
+          "Value": "8",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldelem.ref",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "modpack.mrpack",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Int32 Microsoft.VisualBasic.CompilerServices.Operators::CompareString(System.String,System.String,System.Boolean)",
+          "Indices": null
+        },
+        {
+          "Opcode": "brtrue.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            209
+          ]
+        },
+        {
+          "Opcode": "ldc.i4.s",
+          "Kind": "SByte",
+          "Value": "9",
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.s",
+          "Kind": "local",
+          "Value": "4",
+          "Indices": null
+        },
+        {
+          "Opcode": "leave.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            246
+          ]
+        },
+        {
+          "Opcode": "ldloc.s",
+          "Kind": "local",
+          "Value": "6",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Boolean System.Collections.IEnumerator::MoveNext()",
+          "Indices": null
+        },
+        {
+          "Opcode": "brtrue",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            109
+          ]
+        },
+        {
+          "Opcode": "leave.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            218
+          ]
+        },
+        {
+          "Opcode": "ldloc.s",
+          "Kind": "local",
+          "Value": "6",
+          "Indices": null
+        },
+        {
+          "Opcode": "brfalse.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            217
+          ]
+        },
+        {
+          "Opcode": "ldloc.s",
+          "Kind": "local",
+          "Value": "6",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Void System.IDisposable::Dispose()",
+          "Indices": null
+        },
+        {
+          "Opcode": "endfinally",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "leave.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            246
+          ]
+        },
+        {
+          "Opcode": "dup",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Void Microsoft.VisualBasic.CompilerServices.ProjectData::SetProjectError(System.Exception)",
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.s",
+          "Kind": "local",
+          "Value": "9",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.s",
+          "Kind": "local",
+          "Value": "9",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.String MeloongCore.Extensions.ExceptionExtensions::GetDisplay(System.Exception,System.Boolean)",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "Error.WinIOError",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Boolean System.String::Contains(System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "brfalse.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            232
+          ]
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "\u6253\u5F00\u6574\u5408\u5305\u6587\u4EF6\u5931\u8D25",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.s",
+          "Kind": "local",
+          "Value": "9",
+          "Indices": null
+        },
+        {
+          "Opcode": "newobj",
+          "Kind": "method",
+          "Value": "System.Void System.Exception::.ctor(System.String,System.Exception)",
+          "Indices": null
+        },
+        {
+          "Opcode": "throw",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.String MeloongCore.PathUtils::GetExtension(System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "rar",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Int32 Microsoft.VisualBasic.CompilerServices.Operators::CompareString(System.String,System.String,System.Boolean)",
+          "Indices": null
+        },
+        {
+          "Opcode": "brtrue.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            242
+          ]
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "PCL \u65E0\u6CD5\u5904\u7406 rar \u683C\u5F0F\u7684\u538B\u7F29\u5305\uFF0C\u8BF7\u5728\u89E3\u538B\u540E\u91CD\u65B0\u538B\u7F29\u4E3A zip \u683C\u5F0F\u518D\u8BD5",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.s",
+          "Kind": "local",
+          "Value": "9",
+          "Indices": null
+        },
+        {
+          "Opcode": "newobj",
+          "Kind": "method",
+          "Value": "System.Void System.Exception::.ctor(System.String,System.Exception)",
+          "Indices": null
+        },
+        {
+          "Opcode": "throw",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "\u6253\u5F00\u6574\u5408\u5305\u6587\u4EF6\u5931\u8D25\uFF0C\u6587\u4EF6\u53EF\u80FD\u635F\u574F\u6216\u4E3A\u4E0D\u652F\u6301\u7684\u538B\u7F29\u5305\u683C\u5F0F",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.s",
+          "Kind": "local",
+          "Value": "9",
+          "Indices": null
+        },
+        {
+          "Opcode": "newobj",
+          "Kind": "method",
+          "Value": "System.Void System.Exception::.ctor(System.String,System.Exception)",
+          "Indices": null
+        },
+        {
+          "Opcode": "throw",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.s",
+          "Kind": "local",
+          "Value": "4",
+          "Indices": null
+        },
+        {
+          "Opcode": "switch",
+          "Kind": "switch",
+          "Value": null,
+          "Indices": [
+            249,
+            261,
+            271,
+            281,
+            292,
+            314,
+            314,
+            314,
+            314,
+            304
+          ]
+        },
+        {
+          "Opcode": "br",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            314
+          ]
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "\u6574\u5408\u5305\u79CD\u7C7B\uFF1ACurseForge",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "ModModpack.vb",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Void MeloongCore.Logger::Info(System.String,MeloongCore.LogBehavior,System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.2",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.2",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "PCL.ModLoader/LoaderCombo\u00601\u003CSystem.String\u003E PCL.ModModpack::InstallPackCurseForge(System.String,System.IO.Compression.ZipArchive,System.String,System.String,System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "leave",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            328
+          ]
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "\u6574\u5408\u5305\u79CD\u7C7B\uFF1AHMCL",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "ModModpack.vb",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Void MeloongCore.Logger::Info(System.String,MeloongCore.LogBehavior,System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.2",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "PCL.ModLoader/LoaderCombo\u00601\u003CSystem.String\u003E PCL.ModModpack::InstallPackHMCL(System.String,System.IO.Compression.ZipArchive,System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "leave",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            328
+          ]
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "\u6574\u5408\u5305\u79CD\u7C7B\uFF1AMMC",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "ModModpack.vb",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Void MeloongCore.Logger::Info(System.String,MeloongCore.LogBehavior,System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.2",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "PCL.ModLoader/LoaderCombo\u00601\u003CSystem.String\u003E PCL.ModModpack::InstallPackMMC(System.String,System.IO.Compression.ZipArchive,System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "leave.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            328
+          ]
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "\u6574\u5408\u5305\u79CD\u7C7B\uFF1AMCBBS",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "ModModpack.vb",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Void MeloongCore.Logger::Info(System.String,MeloongCore.LogBehavior,System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.2",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "PCL.ModLoader/LoaderCombo\u00601\u003CSystem.String\u003E PCL.ModModpack::InstallPackMCBBS(System.String,System.IO.Compression.ZipArchive,System.String,System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "leave.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            328
+          ]
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "\u6574\u5408\u5305\u79CD\u7C7B\uFF1AModrinth",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "ModModpack.vb",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Void MeloongCore.Logger::Info(System.String,MeloongCore.LogBehavior,System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.2",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.2",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "PCL.ModLoader/LoaderCombo\u00601\u003CSystem.String\u003E PCL.ModModpack::InstallPackModrinth(System.String,System.IO.Compression.ZipArchive,System.String,System.String,System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "leave.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            328
+          ]
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "\u6574\u5408\u5305\u79CD\u7C7B\uFF1A\u5E26\u542F\u52A8\u5668\u7684\u538B\u7F29\u5305",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "ModModpack.vb",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Void MeloongCore.Logger::Info(System.String,MeloongCore.LogBehavior,System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.2",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "PCL.ModLoader/LoaderCombo\u00601\u003CSystem.String\u003E PCL.ModModpack::InstallPackLauncherPack(System.String,System.IO.Compression.ZipArchive,System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "leave.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            328
+          ]
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "\u6574\u5408\u5305\u79CD\u7C7B\uFF1A\u672A\u80FD\u8BC6\u522B\uFF0C\u5047\u5B9A\u4E3A\u538B\u7F29\u5305",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "ModModpack.vb",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Void MeloongCore.Logger::Info(System.String,MeloongCore.LogBehavior,System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "PCL.ModLoader/LoaderCombo\u00601\u003CSystem.String\u003E PCL.ModModpack::InstallPackCompress(System.String,System.IO.Compression.ZipArchive)",
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "leave.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            328
+          ]
+        },
+        {
+          "Opcode": "ldloc.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "brfalse.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            327
+          ]
+        },
+        {
+          "Opcode": "ldloc.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Void System.IO.Compression.ZipArchive::Dispose()",
+          "Indices": null
+        },
+        {
+          "Opcode": "endfinally",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ret",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        }
+      ],
+      "Handlers": [
+        {
+          "Kind": 2,
+          "TryStart": 104,
+          "TryEnd": 213,
+          "HandlerStart": 213,
+          "HandlerEnd": 218,
+          "FilterStart": -1,
+          "CatchType": null
+        },
+        {
+          "Kind": 0,
+          "TryStart": 37,
+          "TryEnd": 219,
+          "HandlerStart": 219,
+          "HandlerEnd": 246,
+          "FilterStart": -1,
+          "CatchType": "System.Exception"
+        },
+        {
+          "Kind": 2,
+          "TryStart": 14,
+          "TryEnd": 323,
+          "HandlerStart": 323,
+          "HandlerEnd": 328,
+          "FilterStart": -1,
+          "CatchType": null
+        }
+      ]
+    },
+    {
+      "Method": "System.Void PCL.PageDownloadResourceDetail::InitializeStackResourceVersions(System.Windows.Controls.StackPanel)",
+      "MaxStack": 7,
+      "InitLocals": true,
+      "CanonicalSha256": "30333D32EDCA13C43D2347252E9BD403C6C3C2C03F2BF21B7D8B6DD1A85C9204",
+      "Locals": [
+        "System.Collections.Generic.List\u00601\u003CPCL.ResourceVersion\u003E",
+        "System.Boolean",
+        "System.Collections.Generic.List\u00601\u003CSystem.String\u003E",
+        "System.Collections.Generic.List\u00601/Enumerator\u003CSystem.String\u003E",
+        "System.String",
+        "PCL.MyVirtualizingElement\u00601\u003CPCL.MyResourceItem\u003E",
+        "System.Collections.Generic.List\u00601/Enumerator\u003CPCL.ResourceVersion\u003E",
+        "PCL.ResourceVersion"
+      ],
+      "Instructions": [
+        {
+          "Opcode": "ldarg.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Object System.Windows.FrameworkElement::get_Tag()",
+          "Indices": null
+        },
+        {
+          "Opcode": "castclass",
+          "Kind": "type",
+          "Value": "System.Collections.Generic.List\u00601\u003CPCL.ResourceVersion\u003E",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldsfld",
+          "Kind": "field",
+          "Value": "System.Func\u00603\u003CPCL.ResourceVersion,PCL.ResourceVersion,System.Boolean\u003E PCL.PageDownloadResourceDetail/_Closure$__::$I18-0",
+          "Indices": null
+        },
+        {
+          "Opcode": "brfalse.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            7
+          ]
+        },
+        {
+          "Opcode": "ldsfld",
+          "Kind": "field",
+          "Value": "System.Func\u00603\u003CPCL.ResourceVersion,PCL.ResourceVersion,System.Boolean\u003E PCL.PageDownloadResourceDetail/_Closure$__::$I18-0",
+          "Indices": null
+        },
+        {
+          "Opcode": "br.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            12
+          ]
+        },
+        {
+          "Opcode": "ldsfld",
+          "Kind": "field",
+          "Value": "PCL.PageDownloadResourceDetail/_Closure$__ PCL.PageDownloadResourceDetail/_Closure$__::$I",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldftn",
+          "Kind": "method",
+          "Value": "System.Boolean PCL.PageDownloadResourceDetail/_Closure$__::_Lambda$__18-0(PCL.ResourceVersion,PCL.ResourceVersion)",
+          "Indices": null
+        },
+        {
+          "Opcode": "newobj",
+          "Kind": "method",
+          "Value": "System.Void System.Func\u00603\u003CPCL.ResourceVersion,PCL.ResourceVersion,System.Boolean\u003E::.ctor(System.Object,System.IntPtr)",
+          "Indices": null
+        },
+        {
+          "Opcode": "dup",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "stsfld",
+          "Kind": "field",
+          "Value": "System.Func\u00603\u003CPCL.ResourceVersion,PCL.ResourceVersion,System.Boolean\u003E PCL.PageDownloadResourceDetail/_Closure$__::$I18-0",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Collections.Generic.List\u00601\u003CPCL.ResourceVersion\u003E PCL.ModBase::SortByComparison\u003CPCL.ResourceVersion\u003E(System.Collections.Generic.IList\u00601\u003CPCL.ResourceVersion\u003E,System.Func\u00603\u003CPCL.ResourceVersion,PCL.ResourceVersion,System.Boolean\u003E)",
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldsfld",
+          "Kind": "field",
+          "Value": "System.Func\u00602\u003CPCL.ResourceVersion,System.String\u003E PCL.PageDownloadResourceDetail/_Closure$__::$I18-1",
+          "Indices": null
+        },
+        {
+          "Opcode": "brfalse.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            19
+          ]
+        },
+        {
+          "Opcode": "ldsfld",
+          "Kind": "field",
+          "Value": "System.Func\u00602\u003CPCL.ResourceVersion,System.String\u003E PCL.PageDownloadResourceDetail/_Closure$__::$I18-1",
+          "Indices": null
+        },
+        {
+          "Opcode": "br.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            24
+          ]
+        },
+        {
+          "Opcode": "ldsfld",
+          "Kind": "field",
+          "Value": "PCL.PageDownloadResourceDetail/_Closure$__ PCL.PageDownloadResourceDetail/_Closure$__::$I",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldftn",
+          "Kind": "method",
+          "Value": "System.String PCL.PageDownloadResourceDetail/_Closure$__::_Lambda$__18-1(PCL.ResourceVersion)",
+          "Indices": null
+        },
+        {
+          "Opcode": "newobj",
+          "Kind": "method",
+          "Value": "System.Void System.Func\u00602\u003CPCL.ResourceVersion,System.String\u003E::.ctor(System.Object,System.IntPtr)",
+          "Indices": null
+        },
+        {
+          "Opcode": "dup",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "stsfld",
+          "Kind": "field",
+          "Value": "System.Func\u00602\u003CPCL.ResourceVersion,System.String\u003E PCL.PageDownloadResourceDetail/_Closure$__::$I18-1",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Collections.Generic.IEnumerable\u00601\u003CPCL.ResourceVersion\u003E MeloongCore.Extensions.EnumerableExtensions::DistinctBy\u003CPCL.ResourceVersion,System.String\u003E(System.Collections.Generic.IEnumerable\u00601\u003CPCL.ResourceVersion\u003E,System.Func\u00602\u003CPCL.ResourceVersion,System.String\u003E)",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Int32 System.Linq.Enumerable::Count\u003CPCL.ResourceVersion\u003E(System.Collections.Generic.IEnumerable\u00601\u003CPCL.ResourceVersion\u003E)",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Int32 System.Collections.Generic.List\u00601\u003CPCL.ResourceVersion\u003E::get_Count()",
+          "Indices": null
+        },
+        {
+          "Opcode": "ceq",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ceq",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldfld",
+          "Kind": "field",
+          "Value": "PCLCS.ResourceTypes PCL.PageDownloadResourceDetail::TargetResourceType",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.2",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "bne.un.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            39
+          ]
+        },
+        {
+          "Opcode": "newobj",
+          "Kind": "method",
+          "Value": "System.Void System.Collections.Generic.List\u00601\u003CSystem.String\u003E::.ctor()",
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.2",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "br.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            54
+          ]
+        },
+        {
+          "Opcode": "ldloc.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldsfld",
+          "Kind": "field",
+          "Value": "System.Func\u00602\u003CPCL.ResourceVersion,System.Collections.Generic.IEnumerable\u00601\u003CSystem.String\u003E\u003E PCL.PageDownloadResourceDetail/_Closure$__::$I18-2",
+          "Indices": null
+        },
+        {
+          "Opcode": "brfalse.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            44
+          ]
+        },
+        {
+          "Opcode": "ldsfld",
+          "Kind": "field",
+          "Value": "System.Func\u00602\u003CPCL.ResourceVersion,System.Collections.Generic.IEnumerable\u00601\u003CSystem.String\u003E\u003E PCL.PageDownloadResourceDetail/_Closure$__::$I18-2",
+          "Indices": null
+        },
+        {
+          "Opcode": "br.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            49
+          ]
+        },
+        {
+          "Opcode": "ldsfld",
+          "Kind": "field",
+          "Value": "PCL.PageDownloadResourceDetail/_Closure$__ PCL.PageDownloadResourceDetail/_Closure$__::$I",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldftn",
+          "Kind": "method",
+          "Value": "System.Collections.Generic.IEnumerable\u00601\u003CSystem.String\u003E PCL.PageDownloadResourceDetail/_Closure$__::_Lambda$__18-2(PCL.ResourceVersion)",
+          "Indices": null
+        },
+        {
+          "Opcode": "newobj",
+          "Kind": "method",
+          "Value": "System.Void System.Func\u00602\u003CPCL.ResourceVersion,System.Collections.Generic.IEnumerable\u00601\u003CSystem.String\u003E\u003E::.ctor(System.Object,System.IntPtr)",
+          "Indices": null
+        },
+        {
+          "Opcode": "dup",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "stsfld",
+          "Kind": "field",
+          "Value": "System.Func\u00602\u003CPCL.ResourceVersion,System.Collections.Generic.IEnumerable\u00601\u003CSystem.String\u003E\u003E PCL.PageDownloadResourceDetail/_Closure$__::$I18-2",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Collections.Generic.IEnumerable\u00601\u003CSystem.String\u003E System.Linq.Enumerable::SelectMany\u003CPCL.ResourceVersion,System.String\u003E(System.Collections.Generic.IEnumerable\u00601\u003CPCL.ResourceVersion\u003E,System.Func\u00602\u003CPCL.ResourceVersion,System.Collections.Generic.IEnumerable\u00601\u003CSystem.String\u003E\u003E)",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Collections.Generic.IEnumerable\u00601\u003CSystem.String\u003E System.Linq.Enumerable::Distinct\u003CSystem.String\u003E(System.Collections.Generic.IEnumerable\u00601\u003CSystem.String\u003E)",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Collections.Generic.IEnumerable\u00601\u003CSystem.String\u003E MeloongCore.Extensions.EnumerableExtensions::Ordered\u003CSystem.String\u003E(System.Collections.Generic.IEnumerable\u00601\u003CSystem.String\u003E)",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Collections.Generic.List\u00601\u003CSystem.String\u003E System.Linq.Enumerable::ToList\u003CSystem.String\u003E(System.Collections.Generic.IEnumerable\u00601\u003CSystem.String\u003E)",
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.2",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.2",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Boolean System.Linq.Enumerable::Any\u003CSystem.String\u003E(System.Collections.Generic.IEnumerable\u00601\u003CSystem.String\u003E)",
+          "Indices": null
+        },
+        {
+          "Opcode": "brfalse",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            139
+          ]
+        },
+        {
+          "Opcode": "ldloc.2",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldsfld",
+          "Kind": "field",
+          "Value": "System.Func\u00602\u003CSystem.String,System.Boolean\u003E PCL.PageDownloadResourceDetail/_Closure$__::$I18-3",
+          "Indices": null
+        },
+        {
+          "Opcode": "brfalse.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            62
+          ]
+        },
+        {
+          "Opcode": "ldsfld",
+          "Kind": "field",
+          "Value": "System.Func\u00602\u003CSystem.String,System.Boolean\u003E PCL.PageDownloadResourceDetail/_Closure$__::$I18-3",
+          "Indices": null
+        },
+        {
+          "Opcode": "br.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            67
+          ]
+        },
+        {
+          "Opcode": "ldsfld",
+          "Kind": "field",
+          "Value": "PCL.PageDownloadResourceDetail/_Closure$__ PCL.PageDownloadResourceDetail/_Closure$__::$I",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldftn",
+          "Kind": "method",
+          "Value": "System.Boolean PCL.PageDownloadResourceDetail/_Closure$__::_Lambda$__18-3(System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "newobj",
+          "Kind": "method",
+          "Value": "System.Void System.Func\u00602\u003CSystem.String,System.Boolean\u003E::.ctor(System.Object,System.IntPtr)",
+          "Indices": null
+        },
+        {
+          "Opcode": "dup",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "stsfld",
+          "Kind": "field",
+          "Value": "System.Func\u00602\u003CSystem.String,System.Boolean\u003E PCL.PageDownloadResourceDetail/_Closure$__::$I18-3",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Collections.Generic.IEnumerable\u00601\u003CSystem.String\u003E System.Linq.Enumerable::Where\u003CSystem.String\u003E(System.Collections.Generic.IEnumerable\u00601\u003CSystem.String\u003E,System.Func\u00602\u003CSystem.String,System.Boolean\u003E)",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Collections.Generic.List\u00601\u003CSystem.String\u003E System.Linq.Enumerable::ToList\u003CSystem.String\u003E(System.Collections.Generic.IEnumerable\u00601\u003CSystem.String\u003E)",
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.2",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Windows.Controls.UIElementCollection System.Windows.Controls.Panel::get_Children()",
+          "Indices": null
+        },
+        {
+          "Opcode": "newobj",
+          "Kind": "method",
+          "Value": "System.Void System.Windows.Controls.TextBlock::.ctor()",
+          "Indices": null
+        },
+        {
+          "Opcode": "dup",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "\u524D\u7F6E\u8D44\u6E90",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Void System.Windows.Controls.TextBlock::set_Text(System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "dup",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.r8",
+          "Kind": "Double",
+          "Value": "14",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Void System.Windows.Controls.TextBlock::set_FontSize(System.Double)",
+          "Indices": null
+        },
+        {
+          "Opcode": "dup",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Void System.Windows.FrameworkElement::set_HorizontalAlignment(System.Windows.HorizontalAlignment)",
+          "Indices": null
+        },
+        {
+          "Opcode": "dup",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.r8",
+          "Kind": "Double",
+          "Value": "6",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.r8",
+          "Kind": "Double",
+          "Value": "2",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.r8",
+          "Kind": "Double",
+          "Value": "0",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.r8",
+          "Kind": "Double",
+          "Value": "5",
+          "Indices": null
+        },
+        {
+          "Opcode": "newobj",
+          "Kind": "method",
+          "Value": "System.Void System.Windows.Thickness::.ctor(System.Double,System.Double,System.Double,System.Double)",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Void System.Windows.FrameworkElement::set_Margin(System.Windows.Thickness)",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Int32 System.Windows.Controls.UIElementCollection::Add(System.Windows.UIElement)",
+          "Indices": null
+        },
+        {
+          "Opcode": "pop",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.2",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Collections.Generic.List\u00601/Enumerator\u003CSystem.String\u003E System.Collections.Generic.List\u00601\u003CSystem.String\u003E::GetEnumerator()",
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.3",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "br.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            110
+          ]
+        },
+        {
+          "Opcode": "ldloca.s",
+          "Kind": "local",
+          "Value": "3",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.String System.Collections.Generic.List\u00601/Enumerator\u003CSystem.String\u003E::get_Current()",
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.s",
+          "Kind": "local",
+          "Value": "4",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldsfld",
+          "Kind": "field",
+          "Value": "System.Collections.Generic.Dictionary\u00602\u003CSystem.String,PCL.ResourceProject\u003E PCL.ResourceProject::Cache",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.s",
+          "Kind": "local",
+          "Value": "4",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "PCL.ResourceProject System.Collections.Generic.Dictionary\u00602\u003CSystem.String,PCL.ResourceProject\u003E::get_Item(System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "PCL.MyVirtualizingElement\u00601\u003CPCL.MyResourceItem\u003E PCL.ResourceProject::ToResourceItem(System.Boolean,System.Boolean)",
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.s",
+          "Kind": "local",
+          "Value": "5",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Windows.Controls.UIElementCollection System.Windows.Controls.Panel::get_Children()",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.s",
+          "Kind": "local",
+          "Value": "5",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Int32 System.Windows.Controls.UIElementCollection::Add(System.Windows.UIElement)",
+          "Indices": null
+        },
+        {
+          "Opcode": "pop",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloca.s",
+          "Kind": "local",
+          "Value": "3",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Boolean System.Collections.Generic.List\u00601/Enumerator\u003CSystem.String\u003E::MoveNext()",
+          "Indices": null
+        },
+        {
+          "Opcode": "brtrue.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            95
+          ]
+        },
+        {
+          "Opcode": "leave.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            118
+          ]
+        },
+        {
+          "Opcode": "ldloca.s",
+          "Kind": "local",
+          "Value": "3",
+          "Indices": null
+        },
+        {
+          "Opcode": "constrained.",
+          "Kind": "type",
+          "Value": "System.Collections.Generic.List\u00601/Enumerator\u003CSystem.String\u003E",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Void System.IDisposable::Dispose()",
+          "Indices": null
+        },
+        {
+          "Opcode": "endfinally",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Windows.Controls.UIElementCollection System.Windows.Controls.Panel::get_Children()",
+          "Indices": null
+        },
+        {
+          "Opcode": "newobj",
+          "Kind": "method",
+          "Value": "System.Void System.Windows.Controls.TextBlock::.ctor()",
+          "Indices": null
+        },
+        {
+          "Opcode": "dup",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldstr",
+          "Kind": "string",
+          "Value": "\u7248\u672C\u5217\u8868",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Void System.Windows.Controls.TextBlock::set_Text(System.String)",
+          "Indices": null
+        },
+        {
+          "Opcode": "dup",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.r8",
+          "Kind": "Double",
+          "Value": "14",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Void System.Windows.Controls.TextBlock::set_FontSize(System.Double)",
+          "Indices": null
+        },
+        {
+          "Opcode": "dup",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Void System.Windows.FrameworkElement::set_HorizontalAlignment(System.Windows.HorizontalAlignment)",
+          "Indices": null
+        },
+        {
+          "Opcode": "dup",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.r8",
+          "Kind": "Double",
+          "Value": "6",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.r8",
+          "Kind": "Double",
+          "Value": "12",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.r8",
+          "Kind": "Double",
+          "Value": "0",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.r8",
+          "Kind": "Double",
+          "Value": "5",
+          "Indices": null
+        },
+        {
+          "Opcode": "newobj",
+          "Kind": "method",
+          "Value": "System.Void System.Windows.Thickness::.ctor(System.Double,System.Double,System.Double,System.Double)",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Void System.Windows.FrameworkElement::set_Margin(System.Windows.Thickness)",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Int32 System.Windows.Controls.UIElementCollection::Add(System.Windows.UIElement)",
+          "Indices": null
+        },
+        {
+          "Opcode": "pop",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "nop",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Collections.Generic.List\u00601/Enumerator\u003CPCL.ResourceVersion\u003E System.Collections.Generic.List\u00601\u003CPCL.ResourceVersion\u003E::GetEnumerator()",
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.s",
+          "Kind": "local",
+          "Value": "6",
+          "Indices": null
+        },
+        {
+          "Opcode": "br.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            176
+          ]
+        },
+        {
+          "Opcode": "ldloca.s",
+          "Kind": "local",
+          "Value": "6",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "PCL.ResourceVersion System.Collections.Generic.List\u00601/Enumerator\u003CPCL.ResourceVersion\u003E::get_Current()",
+          "Indices": null
+        },
+        {
+          "Opcode": "stloc.s",
+          "Kind": "local",
+          "Value": "7",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldfld",
+          "Kind": "field",
+          "Value": "PCLCS.ResourceTypes PCL.PageDownloadResourceDetail::TargetResourceType",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.i4.2",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "bne.un.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            165
+          ]
+        },
+        {
+          "Opcode": "ldarg.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Windows.Controls.UIElementCollection System.Windows.Controls.Panel::get_Children()",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.s",
+          "Kind": "local",
+          "Value": "7",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldftn",
+          "Kind": "method",
+          "Value": "System.Void PCL.PageDownloadResourceDetail::_Lambda$__R18-5(System.Object,System.Windows.Input.MouseButtonEventArgs)",
+          "Indices": null
+        },
+        {
+          "Opcode": "newobj",
+          "Kind": "method",
+          "Value": "System.Void PCL.MyListItem/ClickEventHandler::.ctor(System.Object,System.IntPtr)",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldftn",
+          "Kind": "method",
+          "Value": "System.Void PCL.PageDownloadResourceDetail::Save_Click(System.Object,System.EventArgs)",
+          "Indices": null
+        },
+        {
+          "Opcode": "newobj",
+          "Kind": "method",
+          "Value": "System.Void PCL.MyIconButton/ClickEventHandler::.ctor(System.Object,System.IntPtr)",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "PCL.MyVirtualizingElement\u00601\u003CPCL.MyListItem\u003E PCL.ResourceVersion::ToListItem(PCL.MyListItem/ClickEventHandler,PCL.MyIconButton/ClickEventHandler,System.Boolean)",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Int32 System.Windows.Controls.UIElementCollection::Add(System.Windows.UIElement)",
+          "Indices": null
+        },
+        {
+          "Opcode": "pop",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "br.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            176
+          ]
+        },
+        {
+          "Opcode": "ldarg.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Windows.Controls.UIElementCollection System.Windows.Controls.Panel::get_Children()",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.s",
+          "Kind": "local",
+          "Value": "7",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.0",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldftn",
+          "Kind": "method",
+          "Value": "System.Void PCL.PageDownloadResourceDetail::Save_Click(System.Object,System.EventArgs)",
+          "Indices": null
+        },
+        {
+          "Opcode": "newobj",
+          "Kind": "method",
+          "Value": "System.Void PCL.MyListItem/ClickEventHandler::.ctor(System.Object,System.IntPtr)",
+          "Indices": null
+        },
+        {
+          "Opcode": "ldnull",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloc.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "PCL.MyVirtualizingElement\u00601\u003CPCL.MyListItem\u003E PCL.ResourceVersion::ToListItem(PCL.MyListItem/ClickEventHandler,PCL.MyIconButton/ClickEventHandler,System.Boolean)",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Int32 System.Windows.Controls.UIElementCollection::Add(System.Windows.UIElement)",
+          "Indices": null
+        },
+        {
+          "Opcode": "pop",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldloca.s",
+          "Kind": "local",
+          "Value": "6",
+          "Indices": null
+        },
+        {
+          "Opcode": "call",
+          "Kind": "method",
+          "Value": "System.Boolean System.Collections.Generic.List\u00601/Enumerator\u003CPCL.ResourceVersion\u003E::MoveNext()",
+          "Indices": null
+        },
+        {
+          "Opcode": "brtrue.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            144
+          ]
+        },
+        {
+          "Opcode": "leave.s",
+          "Kind": "branch",
+          "Value": null,
+          "Indices": [
+            184
+          ]
+        },
+        {
+          "Opcode": "ldloca.s",
+          "Kind": "local",
+          "Value": "6",
+          "Indices": null
+        },
+        {
+          "Opcode": "constrained.",
+          "Kind": "type",
+          "Value": "System.Collections.Generic.List\u00601/Enumerator\u003CPCL.ResourceVersion\u003E",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Void System.IDisposable::Dispose()",
+          "Indices": null
+        },
+        {
+          "Opcode": "endfinally",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Windows.Controls.UIElementCollection System.Windows.Controls.Panel::get_Children()",
+          "Indices": null
+        },
+        {
+          "Opcode": "newobj",
+          "Kind": "method",
+          "Value": "System.Void System.Windows.FrameworkElement::.ctor()",
+          "Indices": null
+        },
+        {
+          "Opcode": "dup",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldc.r8",
+          "Kind": "Double",
+          "Value": "18",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Void System.Windows.FrameworkElement::set_Height(System.Double)",
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Int32 System.Windows.Controls.UIElementCollection::Add(System.Windows.UIElement)",
+          "Indices": null
+        },
+        {
+          "Opcode": "pop",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldarg.1",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "ldnull",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        },
+        {
+          "Opcode": "callvirt",
+          "Kind": "method",
+          "Value": "System.Void System.Windows.FrameworkElement::set_Tag(System.Object)",
+          "Indices": null
+        },
+        {
+          "Opcode": "ret",
+          "Kind": "none",
+          "Value": null,
+          "Indices": null
+        }
+      ],
+      "Handlers": [
+        {
+          "Kind": 2,
+          "TryStart": 91,
+          "TryEnd": 114,
+          "HandlerStart": 114,
+          "HandlerEnd": 118,
+          "FilterStart": -1,
+          "CatchType": null
+        },
+        {
+          "Kind": 2,
+          "TryStart": 140,
+          "TryEnd": 180,
+          "HandlerStart": 180,
+          "HandlerEnd": 184,
+          "FilterStart": -1,
+          "CatchType": null
+        }
+      ]
+    }
+  ]
+}

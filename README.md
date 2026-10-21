@@ -1,75 +1,117 @@
-# PCL 整合包解锁器
+# PCL 整合包解锁器 v3.0
 
-给 PCL2 2.99 恢复整合包安装能力的**修改器**。
+选择受支持的 PCL 2.99 原版 EXE，生成一份恢复整合包安装功能的副本。原文件保持不动。
 
-选一个官方 `PCL2.exe`，生成一份可以正常安装整合包的副本。原文件不动。
-
-> 第三方工具，非 PCL 官方发布。PCL 作者：龙腾猫跃。
+> 第三方独立工具，非 PCL 官方发布。PCL 作者：龙腾猫跃 · 赞助：<https://meloong.com/afd/a/LTCat>
 
 ---
 
-## 它修什么
+## 这个工具是怎么来的（请先看这条）
 
-官方 2.99 把 `RestrictMcDownload` 写成 `Const = True`，编译时内联，导致：
+社区里有一种说法："这玩意的源码是逆向出来的。"需要对一下概念：
 
-| 功能 | 官方状态 |
-|---|---|
-| 下载页原版版本列表 | 被替换成"关闭下载"任务 |
-| 版本修改页原版入口 | 隐藏 |
-| **整合包安装** | **入口被优化成无条件抛异常** |
-| 资源页整合包"安装"按钮 | 不显示 |
+| 部分 | 性质 | 是否逆向 |
+|---|---|---|
+| `src/` 里的工具代码（约 900 行 C#） | 手写 | 否，可直接阅读 |
+| `Resources/pcl-2.99.json`（103 KB） | 从一份**按官方源码编译出的程序集**里读出的方法体 | 是"从二进制读数据"，但它是**编译产物**，不是破解 |
 
-其中整合包安装的代码在二进制里根本不存在（被编译器裁掉），所以本工具用**内嵌的 IL 载荷**把五个方法整体重建。
+关键事实：官方构建把 `RestrictMcDownload` 当作 `Const` 内联，整合包安装入口被优化成**无条件抛异常**，其后的代码被编译器裁掉——所以**任何字节补丁都补不回功能**。唯一可行的办法是从"同一个源码、常量改成 False"的构建里把方法体取回来。
+
+这项工作的可复现性已做成工具：
+
+```powershell
+# 拉 PCL 源码 → 只把 ModpackInstall 相关的常量改成 False → 编译 → 跑这个
+dotnet run --project tools/ExtractPayload -- reference.exe payload.json
+```
+
+输出载荷中四个方法的校验哈希，与仓库里的 `Resources/pcl-2.99.json` **逐项一致**。完整步骤和哈希见 **[docs/PROVENANCE.md](docs/PROVENANCE.md)** 与 **[docs/VERIFICATION.md](docs/VERIFICATION.md)**。
 
 ---
 
-## 怎么用
+## 使用
 
-1. 双击 `PCL整合包解锁器.exe`
-2. 点「选择文件」，或把 `PCL2.exe` 拖进窗口
-3. 点「生成解锁版…」，保存副本
-4. 关闭原启动器，运行新副本
+双击 `PclModpackEnabler.exe`：
 
-命令行：
+1. **第 1 步**：选择或拖入原版 `PCL2.exe`，界面会立即显示识别到的版本和 SHA-256
+2. **第 2 步**：点"生成解锁版副本…"，选择保存位置
+3. 下方日志会给出输入哈希、输出哈希和校验结果
 
+命令行（与 GUI 共用同一套保护）：
+
+```powershell
+./PclModpackEnabler.exe --input original.exe --output patched.exe
+./PclModpackEnabler.exe --input original.exe --output patched.exe --verify
+./PclModpackEnabler.exe --input original.exe --output patched.exe --force
 ```
-PCL整合包解锁器.exe --input "PCL2.exe" --output "解锁版.exe"
-PCL整合包解锁器.exe --input "PCL2.exe" --output "解锁版.exe" --verify
-PCL整合包解锁器.exe --input "PCL2.exe" --output "解锁版.exe" --force
-```
+
+- `--verify` 只读校验已有输出，不写文件
+- `--force` 只允许替换其他输出文件，不绕过输入白名单，不允许覆盖原文件
 
 ---
 
 ## 支持版本
 
-| 输入构建 | 长度 | 输入 SHA-256 | 输出 SHA-256 |
+| 输入 | 长度 | 输入 SHA-256 | 输出 SHA-256 |
 |---|---|---|---|
-| 更新累积版 | 5,985,280 | `5B64D6D540C37639…` | `4B4AAF8F874A3C5C…` |
+| 累积更新版 | 5,985,280 | `5B64D6D540C37639…` | `4B4AAF8F874A3C5C…` |
 | 赞助版 | 5,985,280 | `4C3091AAAC6E53D9…` | `EBA6BC071C2CD91C…` |
 | 未赞助版 | 5,980,160 | `6B6E1260CB5A1D6A…` | `FAB00425CE42A065…` |
 
-只接受哈希白名单内的输入；未知版本即使 `--force` 也拒绝。产物哈希精确可复现。
+完整哈希见 `Resources/versions.json`。未知输入即使 `--force` 也拒绝，并打印其哈希。
 
 ---
 
-## 工作原理
+## 补丁范围
 
-1. 内嵌 `pcl-2.99.json`（约 105 KB 文本 IL）：四个方法的完整指令流、操作数签名、局部变量类型、分支与异常处理器索引，以及每个方法的校验哈希
-2. 运行时用 dnlib 读目标程序集，按「成员全名」解析目标模块里已有的方法/字段/类型/签名——**没有 Importer 兜底、不探测外部程序集、不联网**，找不到就报错拒绝
-3. 可见性补丁按指令序列唯一匹配（`_CardMinecraft` 后备字段 + `set_Visibility`），不用固定字节偏移
-4. 写回前做完整验收：精确产物哈希、6338 个未改方法逐条校验、元数据表/堆/资源比对、PE 结构检查
-5. 通过后以临时文件 + 重命名原子写入，输入全程只读
+| 方法 | 修改 |
+|---|---|
+| `PageDownloadInstall.LoaderInit()` | 重建 18 条指令，保留完成回调 |
+| `ModModpack.ModpackInstall()` | 重建 41 条指令 |
+| `ModModpack.ModpackInstall(String,String,String)` | 重建 330 条指令、3 个 EH |
+| `PageDownloadResourceDetail.InitializeStackResourceVersions(StackPanel)` | 重建 196 条指令、2 个 EH，恢复"安装"回调 |
+| `PageDownloadModify.LoadInstanceFinished(...)` | 按字段/getter/setter 指令序列定位，仅把 `Collapsed` 改成 `Visible` |
 
-单文件 0.94 MB，不需要 .NET 9——.NET Framework 4.8（Win10/11 自带）即可运行。
+成员按目标模块的完整签名解析；内部或外部成员缺失一律拒绝，不猜测、不联网、不自动导入其它程序集。其余方法逐条核对（累积更新版共 6334 个）。
 
 ---
 
-## 已知边界
+## 仓库结构
 
-- 只支持 PCL 2.99.0.0 的上述三种构建；官方更新后需要重新提取载荷
+```
+├─ src/                     工具源码（约 900 行）        → docs/SOURCE-MAP.md
+├─ Resources/               IL 载荷 + 版本白名单
+├─ tools/ExtractPayload/    载荷提取器（可复现来源）
+├─ tests/                   23 条断言
+├─ docs/
+│  ├─ PROVENANCE.md         数据从哪来、怎么复现
+│  ├─ VERIFICATION.md       自己动手验证的步骤
+│  ├─ SOURCE-MAP.md         逐文件说明
+│  ├─ FIXES.md              本次修复清单
+│  ├─ PCL-UPSTREAM-LICENCE.txt
+│  └─ THIRD-PARTY-NOTICES.txt
+├─ build.ps1 / test.ps1
+└─ .github/workflows/build.yml
+```
+
+---
+
+## 构建
+
+```powershell
+./build.ps1                                  # 需要 .NET SDK 9
+./build.ps1 -PackageSource ./local-packages  # 离线：指定本地包源
+./test.ps1                                   # 回归测试
+```
+
+产物 `dist/PclModpackEnabler.exe`（单文件，net48，无需安装 .NET 9）。依赖 dnlib 与 JSON 库在构建时内嵌，仓库不提交依赖 DLL 或任何 PCL EXE。
+
+工具自身哈希随编译器版本变化，**不承诺逐字节可复现**；承诺的是行为与产物一致（见 `docs/VERIFICATION.md`）。
+
+---
+
+## 署名与许可
+
+- 方法体载荷来自群友提供的 dnlib 方案，本仓库补齐 GUI、三版本白名单、MaxStack 修复、单文件打包与可复现提取工具
+- 载荷属于 PCL 派生数据，**不受本仓库 MIT 许可重新授权**；上游许可见 `docs/PCL-UPSTREAM-LICENCE.txt`
+- dnlib、JSON 库许可见 `docs/THIRD-PARTY-NOTICES.txt`
 - 修改启动器行为可能违反其使用条款，风险自担
-- 按「现状」提供，不附带任何担保
-
-## 致谢
-
-方法体重建方案来自群友的 dnlib 文本载荷实现，本工具在其基础上补齐了 GUI、三种构建白名单与单文件打包。PCL 原作者：龙腾猫跃。

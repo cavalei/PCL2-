@@ -27,3 +27,5 @@ SOFTWARE.
 本仓库仅包含第三方补丁工具的源码与构建脚本，不包含 PCL 启动器本体。
 PCL 的著作权归其原作者龙腾猫跃所有。使用者需自行获取合法的 PCL 启动器，
 并自行承担修改第三方软件带来的后果。
+
+Scope clarification: this MIT license applies to the patcher code, not to Resources/pcl-2.99.json or PCL itself. PCL-derived data retains the upstream terms in docs/PCL-UPSTREAM-LICENCE.txt. Embedded dependency licenses are included in docs/THIRD-PARTY-NOTICES.txt.

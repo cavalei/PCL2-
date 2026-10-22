@@ -63,6 +63,15 @@ internal static partial class PatcherCore {
    else {Require(force||!File.Exists(outputFull),"Output exists; use --force to replace it"); result=Build(original);}
    Require(version.OutputSha256==null||Hash(result)==version.OutputSha256,"Output SHA256 mismatch: "+Hash(result));
    Verify(original,result,log);
+   // 指纹路径再加一条硬断言：除目标方法外，其余方法体必须逐条不变
+   if(fingerprint!=null) {
+    using(var outMod=ModuleDefMD.Load(result)) {
+     var ofp=Fingerprint(outMod);
+     Require(ofp.CoreCount==fingerprint.CoreCount && string.Equals(ofp.Core,fingerprint.Core,StringComparison.Ordinal),
+      "Core fingerprint changed: "+ofp.Core.Substring(0,16));
+     log("CORE FINGERPRINT unchanged="+fingerprint.Core.Substring(0,16)+" (methods="+ofp.CoreCount+")");
+    }
+   }
    if(!verify)AtomicOutput.Write(result,outputFull,force);
    file.Position=0;Require(Hash(ReadAll(file))==inputHash,"Input changed");
    Require(version.OutputSha256==null||Hash(File.ReadAllBytes(outputFull))==version.OutputSha256,"On-disk output mismatch");

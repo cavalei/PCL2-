@@ -19,16 +19,18 @@ internal static partial class PatcherCore {
  }
  internal static string Inspect(string path) {
   using(var file=new FileStream(path,FileMode.Open,FileAccess.Read,FileShare.Read)) {
-   byte[] bytes=ReadAll(file); var version=KnownVersion(bytes);
-   return version.Version+"; SHA256="+Hash(bytes);
+    byte[] bytes=ReadAll(file); var version=KnownVersion(bytes,out var fp);
+    return version.Version+"; SHA256="+Hash(bytes)+(fp!=null?"; 指纹 "+fp.Full.Substring(0,12):"");
   }
  }
- static VersionEntry KnownVersion(byte[] input) {
+ // 先认旧的文件哈希白名单；认不出就按方法体指纹判定（同源码不同编译时间也能过）。
+ static VersionEntry KnownVersion(byte[] input,out FingerprintResult fingerprint) {
   string hash=Hash(input);
   List<VersionEntry> all=Resource<List<VersionEntry>>("versions.json");
   VersionEntry hit=all.SingleOrDefault(v=>v.InputSha256==hash);
-  if(hit!=null)return hit;
-  throw new InvalidOperationException(Explain(input,hash,all));
+  if(hit!=null){fingerprint=null;return hit;}
+  fingerprint=MatchFingerprint(input);
+  return new VersionEntry { Version=fingerprint.Match.Label,InputSha256=hash,OutputSha256=null };
  }
  // 输入不在白名单时，尽量说清楚原因，而不是只丢一串哈希。
  static string Explain(byte[] input,string hash,List<VersionEntry> all) {
@@ -54,17 +56,17 @@ internal static partial class PatcherCore {
   // Deny writes and deletion while generating, including aliases to the original file.
   using(var file=new FileStream(inputFull,FileMode.Open,FileAccess.Read,FileShare.Read)) {
    if(File.Exists(outputFull))FileIdentity.RequireDifferent(file,outputFull);
-   byte[] original=ReadAll(file); string inputHash=Hash(original); var version=KnownVersion(original);
+   byte[] original=ReadAll(file); string inputHash=Hash(original); var version=KnownVersion(original,out var fingerprint);
    log("VERSION="+version.Version);log("INPUT SHA256="+inputHash);
    byte[] result;
    if(verify)result=File.ReadAllBytes(outputFull);
    else {Require(force||!File.Exists(outputFull),"Output exists; use --force to replace it"); result=Build(original);}
-   Require(Hash(result)==version.OutputSha256,"Output SHA256 mismatch: "+Hash(result));
+   Require(version.OutputSha256==null||Hash(result)==version.OutputSha256,"Output SHA256 mismatch: "+Hash(result));
    Verify(original,result,log);
    if(!verify)AtomicOutput.Write(result,outputFull,force);
    file.Position=0;Require(Hash(ReadAll(file))==inputHash,"Input changed");
-   Require(Hash(File.ReadAllBytes(outputFull))==version.OutputSha256,"On-disk output mismatch");
-   log("OUTPUT SHA256="+version.OutputSha256);
+   Require(version.OutputSha256==null||Hash(File.ReadAllBytes(outputFull))==version.OutputSha256,"On-disk output mismatch");
+   log("OUTPUT SHA256="+Hash(File.ReadAllBytes(outputFull)));
    log(verify?"VERIFY PASS (read-only)":"PATCH PASS (input unchanged)");
   }
  }

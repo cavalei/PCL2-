@@ -37,7 +37,7 @@ internal sealed class MainForm : Form
 
     public MainForm()
     {
-        Text = "PCL 整合包解锁器 v3.2（第三方修复版）";
+        Text = "PCL 整合包解锁器 v3.3（第三方修复版）";
         Font = new Font("Microsoft YaHei UI", 9.5F);
         ClientSize = new Size(780, 600);
         MinimumSize = new Size(700, 540);

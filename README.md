@@ -1,5 +1,5 @@
 > **下载请点击右侧 Releases**（不要点 Download ZIP，那是源码）
-# PCL 整合包解锁器 v3.2
+# PCL 整合包解锁器 v3.3
 
 选择受支持的 PCL 2.99 原版 EXE，生成一份恢复整合包安装功能的副本。原文件保持不动。
 
@@ -58,7 +58,7 @@ dotnet run --project tools/ExtractPayload -- reference.exe payload.json
 | 赞助版 | 5,985,280 | `4C3091AAAC6E53D9…` | `EBA6BC071C2CD91C…` |
 | 未赞助版 | 5,980,160 | `6B6E1260CB5A1D6A…` | `FAB00425CE42A065…` |
 
-完整哈希见 `Resources/versions.json`。未知输入即使 `--force` 也拒绝，并给出具体原因：若是被旧工具改过的文件，会提示「该版本已被解锁下载，无法确认文件安全性，请使用原版重试！」
+已知构建的完整哈希见 `Resources/versions.json`。除此之外，工具会按**方法体指纹**识别构建（`Resources/signatures.json`），因此同一份源码在不同时间编译出的文件也能处理——不依赖文件哈希。若文件已被其它工具改过，会提示「该版本已被解锁下载，无法确认文件安全性，请使用原版重试！」
 
 ---
 

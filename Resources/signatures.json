@@ -1,0 +1,16 @@
+{
+  "Note": "按方法体指纹识别构建，不依赖文件哈希。FullRoot=全部方法体；CoreRoot=除五个目标方法外的其余方法体。",
+  "Signatures": [
+    {
+      "Label": "PCL 2.99.0.0 · 官方构建 014C81FD",
+      "MethodCount": 5999,
+      "FullRoot": "6A8051858DCB119507D0D148124858A6AE6306C7E9DA0828BDA4FF062B8F0AC2",
+      "CoreCount": 5994,
+      "CoreRoot": "7EB7B17BCBE5C2DDEFEA279C7DC6F8AB14F9FA3B737CDDA56A8FB8D75B734AE8"
+    }
+  ],
+  "UnlockedShape": {
+    "ModpackInstall": 41,
+    "ModpackInstall3": 330
+  }
+}

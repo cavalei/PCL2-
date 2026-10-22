@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.IO;
 using System.Linq;
 using System.Collections.Generic;
@@ -37,6 +37,7 @@ internal sealed class EhData {
 internal sealed class VersionEntry {
  public string Version {get;set;}
  public string InputSha256 {get;set;}
+   public long InputSize {get;set;}
  public string OutputSha256 {get;set;}
 }
 

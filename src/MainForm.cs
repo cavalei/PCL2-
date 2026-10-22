@@ -37,7 +37,7 @@ internal sealed class MainForm : Form
 
     public MainForm()
     {
-        Text = "PCL 整合包解锁器 v3.4（第三方修复版）";
+        Text = "PCL 整合包解锁器 v3.5（第三方修复版）";
         Font = new Font("Microsoft YaHei UI", 9.5F);
         ClientSize = new Size(780, 600);
         MinimumSize = new Size(700, 540);
@@ -131,7 +131,7 @@ internal sealed class MainForm : Form
 
         status.Dock = DockStyle.Top;
         status.Height = 22;
-        status.Text = "尚未选择文件。支持 2.99.0.0 的三种官方构建，其余版本会被拒绝。";
+        status.Text = "尚未选择文件。支持 PCL 2.99.0.0 的官方构建；其余版本会被拒绝并给出原因。";
 
         // 倒序添加，使停靠顺序为：row → hint → status
         box.Controls.Add(status);

@@ -1,5 +1,13 @@
 > **下载请点击右侧 Releases**（不要点 Download ZIP，那是源码）
-# PCL 整合包解锁器 v3.4
+# PCL 整合包解锁器 v3.5
+
+[![Release](https://img.shields.io/github/v/release/cavalei/PCL2-?label=release&color=2ea44f)](https://github.com/cavalei/PCL2-/releases/latest)
+[![CI](https://github.com/cavalei/PCL2-/actions/workflows/build.yml/badge.svg)](https://github.com/cavalei/PCL2-/actions/workflows/build.yml)
+![platform](https://img.shields.io/badge/platform-Windows%2010%2F11-0078D6)
+![runtime](https://img.shields.io/badge/runtime-.NET%20Framework%204.8-512BD4)
+![size](https://img.shields.io/badge/single%20file-2%20MB-blue)
+
+![界面](docs/assets/ui.png)
 
 选择受支持的 PCL 2.99 原版 EXE，生成一份恢复整合包安装功能的副本。原文件保持不动。
 

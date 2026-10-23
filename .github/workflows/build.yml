@@ -21,6 +21,9 @@ jobs:
       - name: Regression tests (no PCL binaries required)
         shell: pwsh
         run: ./test.ps1
+      - name: Data self-check (payload, versions, signatures)
+        shell: pwsh
+        run: ./tests/CheckData.ps1
       - name: Record SHA256
         shell: pwsh
         run: |

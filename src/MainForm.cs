@@ -37,7 +37,7 @@ internal sealed class MainForm : Form
 
     public MainForm()
     {
-        Text = "PCL 整合包解锁器 v3.5（第三方修复版）";
+        Text = "PCL 整合包解锁器 v3.6（第三方修复版）";
         Font = new Font("Microsoft YaHei UI", 9.5F);
         ClientSize = new Size(780, 600);
         MinimumSize = new Size(700, 540);
@@ -290,6 +290,10 @@ internal sealed class MainForm : Form
 
     private void Log(string text)
     {
-        logs.AppendText("[" + DateTime.Now.ToString("HH:mm:ss") + "] " + text + Environment.NewLine);
+        // 界面里把长哈希截短，避免日志框频繁折行；命令行输出保持完整。
+        string shown = System.Text.RegularExpressions.Regex.Replace(
+            text, @"\b[0-9A-Fa-f]{40,64}\b",
+            match => match.Value.Substring(0, 16) + "…");
+        logs.AppendText("[" + DateTime.Now.ToString("HH:mm:ss") + "] " + shown + Environment.NewLine);
     }
 }

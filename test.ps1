@@ -13,3 +13,5 @@ try {
  else {& ./tests/bin/Release/net48/PclFix.Tests.exe}
  if($LASTEXITCODE -ne 0){throw 'Regression tests failed'}
 } finally {Pop-Location}
+
+& "$PSScriptRoot/tests/CheckData.ps1"

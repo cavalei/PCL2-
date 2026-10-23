@@ -1,5 +1,5 @@
 > **下载请点击右侧 Releases**（不要点 Download ZIP，那是源码）
-# PCL 整合包解锁器 v3.6
+# PCL 整合包解锁器 v3.7
 
 [![Release](https://img.shields.io/github/v/release/cavalei/PCL2-?label=release&color=2ea44f)](https://github.com/cavalei/PCL2-/releases/latest)
 [![CI](https://github.com/cavalei/PCL2-/actions/workflows/build.yml/badge.svg)](https://github.com/cavalei/PCL2-/actions/workflows/build.yml)

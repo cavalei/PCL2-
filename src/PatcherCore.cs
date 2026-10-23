@@ -72,8 +72,9 @@ internal static partial class PatcherCore {
      log("CORE FINGERPRINT unchanged="+fingerprint.Core.Substring(0,16)+" (methods="+ofp.CoreCount+")");
     }
    }
+   // 写盘前先确认输入没被外部改动，避免"输入已变但产物已落地"
+   file.Position=0;Require(Hash(ReadAll(file))==inputHash,"Input changed during patching; nothing written");
    if(!verify)AtomicOutput.Write(result,outputFull,force);
-   file.Position=0;Require(Hash(ReadAll(file))==inputHash,"Input changed");
    Require(version.OutputSha256==null||Hash(File.ReadAllBytes(outputFull))==version.OutputSha256,"On-disk output mismatch");
    log("OUTPUT SHA256="+Hash(File.ReadAllBytes(outputFull)));
    log(verify?"VERIFY PASS (read-only)":"PATCH PASS (input unchanged)");

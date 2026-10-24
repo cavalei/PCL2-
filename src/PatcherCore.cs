@@ -87,7 +87,7 @@ internal static partial class PatcherCore {
    var resolver=new TargetResolver(mod);
    foreach(var method in mod.GetTypes().SelectMany(t=>t.Methods).Where(m=>m.HasBody))method.Body.KeepOldMaxStack=true;
    foreach(var body in payload.Methods)Restore(body,resolver);
-   ShowMinecraftCard(mod);
+   ShowMinecraftCard(mod);UnhideLeftNav(mod);
    var opts=new ModuleWriterOptions(mod){Logger=DummyLogger.NoThrowInstance,MetadataOptions={Flags=MetadataFlags.PreserveAll}};
    using(var memory=new MemoryStream()){mod.Write(memory,opts);return memory.ToArray();}
   }
@@ -104,6 +104,7 @@ internal static partial class PatcherCore {
      Require(Hash(Encoding.UTF8.GetBytes(Canonical(n)))==data.CanonicalSha256,"Payload mismatch: "+m.FullName);
      log("BODY "+m.FullName+": instructions="+n.Body.Instructions.Count+", EH="+n.Body.ExceptionHandlers.Count);
     } else if(m.FullName==card.FullName)Require(Canonical(card)==Canonical(n),"Card patch differs");
+    else if(m.FullName==LeftNavCtor)VerifyLeftNav(n);
     else {Require(Canonical(m)==Canonical(n),"Unexpected method change: "+m.FullName);unchanged++;}
    }
    log("OTHER METHODS unchanged="+unchanged);VerifyMetadata(before,after);
